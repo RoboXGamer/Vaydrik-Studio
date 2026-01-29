@@ -1,0 +1,87 @@
+<!-- Media Modal for Full View -->
+<div class="media-modal" id="media-modal">
+    <div class="media-modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div id="modal-media"></div>
+        <div class="modal-info" id="modal-info">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(item: HTMLElement) {
+        const modal = document.getElementById('media-modal');
+        const modalMedia = document.getElementById('modal-media');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+
+        // Get media content
+        const video = item.querySelector('video');
+        const image = item.querySelector('img');
+        const title = item.querySelector('.portfolio-title')?.textContent || 'Portfolio Item';
+        const description = item.querySelector('.portfolio-description')?.textContent || 'Creative work showcase';
+
+        // Clear previous content
+        if (modalMedia) modalMedia.innerHTML = '';
+
+        // Add media to modal
+        if (video && video.querySelector('source')) {
+            const modalVideo = video.cloneNode(true) as HTMLVideoElement;
+            modalVideo.controls = true;
+            modalVideo.muted = false;
+            modalVideo.autoplay = false;
+            modalMedia?.appendChild(modalVideo);
+        } else if (image) {
+            const modalImage = image.cloneNode(true) as HTMLImageElement;
+            modalMedia?.appendChild(modalImage);
+        }
+
+        // Set info
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalDescription) modalDescription.textContent = description;
+
+        // Show modal
+        modal?.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('media-modal');
+        const modalVideo = modal?.querySelector('video');
+        
+        if (modalVideo) {
+            modalVideo.pause();
+        }
+        
+        modal?.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Listen for custom event from Portfolio component
+    window.addEventListener('openMediaModal', (e: Event) => {
+        const customEvent = e as CustomEvent;
+        openModal(customEvent.detail.item);
+    });
+
+    // Close modal with escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    // Close modal when clicking outside content or on close button
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('media-modal')?.addEventListener('click', (e) => {
+            if ((e.target as HTMLElement).id === 'media-modal') {
+                closeModal();
+            }
+        });
+
+        document.getElementById('modal-close')?.addEventListener('click', () => {
+            closeModal();
+        });
+    });
+</script>

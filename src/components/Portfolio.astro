@@ -1,0 +1,120 @@
+---
+import portfolioData from '../data/portfolio.json';
+import PortfolioItem from './PortfolioItem.astro';
+
+const { categories } = portfolioData;
+---
+
+<!-- Portfolio Section -->
+<section class="portfolio-section" id="work">
+    <h2 class="section-title">OUR WORK</h2>
+    <p class="portfolio-subtitle">Explore our diverse portfolio across different creative disciplines</p>
+    
+    <!-- Portfolio Tabs -->
+    <div class="portfolio-tabs">
+        {categories.map((category, index) => (
+            <button 
+                class={`tab-btn ${index === 0 ? 'active' : ''}`} 
+                data-tab={category.id}
+            >
+                {category.label}
+            </button>
+        ))}
+    </div>
+
+    {categories.map((category, index) => (
+        <div 
+            class={`tab-content ${index === 0 ? 'active' : ''}`} 
+            id={`${category.id}-tab`}
+        >
+            <div class="portfolio-grid">
+                {category.items.length > 0 ? (
+                    category.items.map((item) => (
+                        <PortfolioItem item={item} />
+                    ))
+                ) : (
+                    <p class="no-items">Coming soon...</p>
+                )}
+            </div>
+        </div>
+    ))}
+</section>
+
+<script>
+    // Portfolio tab functionality
+    function initPortfolioTabs() {
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = (button as HTMLElement).dataset.tab;
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                // Show corresponding tab content
+                const targetTab = document.getElementById(`${tabId}-tab`);
+                if (targetTab) {
+                    targetTab.classList.add('active');
+                }
+                
+                // Reinitialize interactions for newly visible content
+                setTimeout(() => {
+                    initVideoHovers();
+                }, 100);
+            });
+        });
+    }
+
+    // Video hover effects
+    function initVideoHovers() {
+        const videoItems = document.querySelectorAll('.portfolio-item video');
+        
+        videoItems.forEach(video => {
+            const item = video.closest('.portfolio-item');
+            
+            item?.addEventListener('mouseenter', () => {
+                const videoEl = item.querySelector('video');
+                if (videoEl) {
+                    videoEl.play();
+                }
+            });
+            
+            item?.addEventListener('mouseleave', () => {
+                const videoEl = item.querySelector('video');
+                if (videoEl) {
+                    videoEl.pause();
+                    videoEl.currentTime = 0;
+                }
+            });
+        });
+    }
+
+    // Enhanced media modal functionality for portfolio items
+    function initPortfolioMediaModal() {
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        portfolioItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Dispatch custom event to open modal
+                const event = new CustomEvent('openMediaModal', { 
+                    detail: { item: item as HTMLElement }
+                });
+                window.dispatchEvent(event);
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            initPortfolioTabs();
+            initVideoHovers();
+            initPortfolioMediaModal();
+        }, 1000);
+    });
+</script>

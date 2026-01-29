@@ -1,0 +1,68 @@
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-content">
+            <h2>About Vaydrik Studio</h2>
+            <p class="about-text">
+                We are a creative powerhouse that transforms ideas into compelling visual stories. 
+                With a passion for innovation and excellence, our team combines technical expertise 
+                with artistic vision to deliver results that exceed expectations.
+            </p>
+            <p class="about-text">
+                Founded on the belief that every project deserves a unique creative approach, 
+                we work closely with our clients to understand their vision and bring it to life 
+                through stunning visuals and engaging content.
+            </p>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number">150</span>
+                <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">50</span>
+                <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Years Experience</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Counter animation for stats
+    function animateCounters() {
+        const counters = document.querySelectorAll('.stat-number');
+        
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target as HTMLElement;
+                    const target = parseInt(counter.textContent || '0');
+                    let current = 0;
+                    const increment = target / 100;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            counter.textContent = target + '+';
+                            clearInterval(timer);
+                        } else {
+                            counter.textContent = Math.floor(current) + '+';
+                        }
+                    }, 20);
+                    counterObserver.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            animateCounters();
+        }, 1000);
+    });
+</script>

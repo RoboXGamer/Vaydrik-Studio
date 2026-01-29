@@ -1,0 +1,30 @@
+---
+interface Props {
+  testimonial: {
+    name: string;
+    designation: string;
+    content: string;
+    rating: number;
+  };
+}
+
+const { testimonial } = Astro.props;
+const initial = testimonial.name.charAt(0);
+const stars = '★'.repeat(testimonial.rating);
+---
+
+<div class="testimonial-card fade-in">
+    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: linear-gradient(135deg, #a855f7, #3b82f6); display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.25rem; margin-right: 1rem;">
+            {initial}
+        </div>
+        <div>
+            <h4 style="font-weight: 600; margin: 0;">{testimonial.name}</h4>
+            <p style="font-size: 0.875rem; color: #888; margin: 0;">{testimonial.designation}</p>
+        </div>
+    </div>
+    <p style="color: #ccc; font-style: italic; margin-bottom: 1rem;">"{testimonial.content}"</p>
+    <div style="display: flex; color: #fbbf24;">
+        {stars}
+    </div>
+</div>

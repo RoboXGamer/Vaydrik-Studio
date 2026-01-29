@@ -1,0 +1,129 @@
+---
+import services from '../data/services.json';
+---
+<!-- Services Section -->
+<section class="services animated-bg" id="services">
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    
+    <div class="services-header">
+        <h2 class="section-title">OUR EXPERTISE</h2>
+        <p class="services-subtitle">We transform ideas into compelling visual experiences across multiple creative disciplines</p>
+    </div>
+
+    {services.map((service) => (
+        <div class="service-section">
+            <div class={`service-container ${service.reverse ? "reverse" : ""}`}>
+                <div class="service-content">
+                    <div class="service-number">{service.number}</div>
+                    <h3 class="service-title">{service.title}</h3>
+                    <p class="service-description">
+                        {service.description}
+                    </p>
+                    <ul class="service-features">
+                        {service.features.map((feature) => (
+                            <li>{feature}</li>
+                        ))}
+                    </ul>
+
+                    {/* Case Study */}
+                    <div class="service-case-study">
+                        <div class="case-study-header">Case Study</div>
+                        <div class="case-study-grid">
+                            <div class="case-study-item">
+                                <div class="case-study-label">The Problem</div>
+                                <p class="case-study-text">{service.caseStudy.problem}</p>
+                            </div>
+                            <div class="case-study-item">
+                                <div class="case-study-label">Our Process</div>
+                                <p class="case-study-text">{service.caseStudy.process}</p>
+                            </div>
+                            <div class="case-study-item">
+                                <div class="case-study-label">The Result</div>
+                                <p class="case-study-text case-study-result">{service.caseStudy.result}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href={service.cta.link} class="service-cta">{service.cta.text}</a>
+                </div>
+                <div class="service-visual">
+                    <div class="service-image-grid">
+                        {service.visual.map((image) => (
+                            <div class="service-image">
+                                <img src={image.src} alt={image.alt} />
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    ))}
+</section>
+
+<script>
+    // Enhanced scroll animations for service sections
+    function initServiceAnimations() {
+        const serviceContainers = document.querySelectorAll('.service-container');
+        
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    (entry.target as HTMLElement).style.transform = 'translateY(0)';
+                    (entry.target as HTMLElement).style.opacity = '1';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        serviceContainers.forEach(container => {
+            (container as HTMLElement).style.transform = 'translateY(50px)';
+            (container as HTMLElement).style.opacity = '0';
+            (container as HTMLElement).style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            serviceObserver.observe(container);
+        });
+    }
+
+    // Service CTA hover effects
+    function initServiceCTAs() {
+        const ctas = document.querySelectorAll('.service-cta');
+        
+        ctas.forEach(cta => {
+            cta.addEventListener('mouseenter', function(this: HTMLElement) {
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+            
+            cta.addEventListener('mouseleave', function(this: HTMLElement) {
+                this.style.transform = 'translateY(-3px) scale(1)';
+            });
+        });
+    }
+
+    // Floating elements animation
+    function initFloatingElements() {
+        const floatingElements = document.querySelectorAll('.floating-element');
+        
+        floatingElements.forEach((element, index) => {
+            const randomDelay = Math.random() * 2;
+            const randomDuration = 4 + Math.random() * 4;
+            
+            (element as HTMLElement).style.animationDelay = randomDelay + 's';
+            (element as HTMLElement).style.animationDuration = randomDuration + 's';
+            
+            // Random movement on scroll
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.1 * (index + 1);
+                (element as HTMLElement).style.transform = `translateY(${rate}px) rotate(${rate * 0.5}deg)`;
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            initServiceAnimations();
+            initServiceCTAs();
+            initFloatingElements();
+        }, 1000);
+    });
+</script>

@@ -1,0 +1,219 @@
+[
+  {
+    "number": "01",
+    "title": "Wedding Videography",
+    "description": "Preserve your special day with cinematic wedding films that capture every emotion, every detail, and every magical moment. We create timeless wedding videos that you'll treasure forever.",
+    "reverse": false,
+    "features": [
+      "Cinematic Wedding Films",
+      "Pre-Wedding Shoots",
+      "Traditional & Destination Weddings",
+      "Same-Day Edit Highlights",
+      "Drone Coverage"
+    ],
+    "caseStudy": {
+      "problem": "Couple wanted authentic multi-day coverage across 3 venues with diverse cultural ceremonies.",
+      "process": "3-person crew, multi-camera setup, aerial footage, same-day edit for reception screening.",
+      "result": "25-min cinematic film delivered, featured on WedMeGood, 50K+ views online."
+    },
+    "cta": {
+      "text": "Book Your Wedding",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=600&fit=crop",
+        "alt": "Wedding Videography"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=300&fit=crop",
+        "alt": "Wedding Ceremony"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=300&fit=crop",
+        "alt": "Wedding Coverage"
+      }
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Videography & Cinematography",
+    "description": "We craft compelling video narratives that captivate audiences and drive results. From concept to post-production, our cinematic approach ensures every frame tells your story.",
+    "reverse": true,
+    "features": [
+      "Corporate & Brand Videos",
+      "Commercial Productions",
+      "Documentary Filmmaking",
+      "Event Coverage",
+      "Social Media Content"
+    ],
+    "caseStudy": {
+      "problem": "Brand needed impactful storytelling for product launch campaign.",
+      "process": "Conceptualized narrative, 4K production, color grading, sound design.",
+      "result": "500K+ views, 40% increase in product inquiries within first week."
+    },
+    "cta": {
+      "text": "Start Your Project",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=400&h=600&fit=crop",
+        "alt": "Video Production"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop",
+        "alt": "Cinematography"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1634680582783-0b06ca18a449?w=400&h=300&fit=crop",
+        "alt": "Film Equipment"
+      }
+    ]
+  },
+  {
+    "number": "03",
+    "title": "Professional Video Editing",
+    "description": "Transform your raw footage into polished, professional videos with our expert editing services. We enhance storytelling through precise cuts, color grading, sound design, and visual effects.",
+    "reverse": false,
+    "features": [
+      "Advanced Color Grading",
+      "Audio Mixing & Sound Design",
+      "Multi-Camera Editing",
+      "Visual Effects Integration",
+      "Fast Turnaround Times"
+    ],
+    "caseStudy": {
+      "problem": "YouTube channel had 40% viewer drop-off in first 30 seconds.",
+      "process": "Restructured intros, dynamic cuts, motion graphics, strategic captions.",
+      "result": "Watch time increased 45%, subscriber growth up 3x."
+    },
+    "cta": {
+      "text": "Get Started",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=1000&h=600&fit=crop",
+        "alt": "Video Editing",
+        "style": "object-fit: cover; object-position: 30% center;"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1605826832916-d0ea9d6fe71e?w=400&h=300&fit=crop",
+        "alt": "Post Production"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop",
+        "alt": "Editing Suite"
+      }
+    ]
+  },
+  {
+    "number": "04",
+    "title": "Motion Graphics & Animation",
+    "description": "Bring your ideas to life with stunning motion graphics and animations. We create dynamic visual experiences that engage and inform your audience.",
+    "reverse": true,
+    "features": [
+      "2D & 3D Animation",
+      "Logo Animations",
+      "Explainer Videos",
+      "Visual Effects (VFX)",
+      "Interactive Animations"
+    ],
+    "caseStudy": {
+      "problem": "Brand needed impactful storytelling for product launch campaign.",
+      "process": "Conceptualized narrative, 4K production, color grading, sound design.",
+      "result": "500K+ views, 40% increase in product inquiries within first week."
+    },
+    "cta": {
+      "text": "Animate Your Vision",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://images.unsplash.com/photo-1628494391268-c9935bc384d5?w=400&h=600&fit=crop",
+        "alt": "Motion Graphics"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop",
+        "alt": "3D Animation"
+      },
+      {
+        "src": "/2.png",
+        "alt": "Visual Effects"
+      }
+    ]
+  },
+  {
+    "number": "05",
+    "title": "Professional Photography",
+    "description": "Capture moments that matter with our professional photography services. From portraits to products, we deliver images that leave lasting impressions.",
+    "reverse": false,
+    "features": [
+      "Portrait Photography",
+      "Product Photography",
+      "Commercial Shoots",
+      "Event Photography",
+      "Architectural Photography"
+    ],
+    "caseStudy": {
+      "problem": "Couple wanted authentic multi-day coverage across 3 venues with diverse cultural ceremonies.",
+      "process": "3-person crew, multi-camera setup, aerial footage, same-day edit for reception screening.",
+      "result": "25-min cinematic film delivered, featured on WedMeGood, 50K+ views online."
+    },
+    "cta": {
+      "text": "Book a Shoot",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://images.unsplash.com/photo-1724627559656-9652a42c7e91?w=400&h=600&fit=crop",
+        "alt": "Professional Photography"
+      },
+      {
+        "src": "/1.png",
+        "alt": "Portrait Session"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1671019793759-077ea7536f10?w=400&h=600&fit=crop",
+        "alt": "Professional Photography"
+      }
+    ]
+  },
+  {
+    "number": "06",
+    "title": "Brand Design & Identity",
+    "description": "Create a distinctive brand identity that resonates with your target audience. From logos to complete brand systems, we build brands that stand out.",
+    "reverse": true,
+    "features": [
+      "Logo Design & Branding",
+      "Visual Identity Systems",
+      "Brand Guidelines",
+      "Marketing Materials",
+      "Digital Brand Assets"
+    ],
+    "caseStudy": {
+      "problem": "Brand needed impactful storytelling for product launch campaign.",
+      "process": "Conceptualized narrative, 4K production, color grading, sound design.",
+      "result": "500K+ views, 40% increase in product inquiries within first week."
+    },
+    "cta": {
+      "text": "Build Your Brand",
+      "link": "#contact"
+    },
+    "visual": [
+      {
+        "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=600&fit=crop",
+        "alt": "Brand Design"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
+        "alt": "Logo Design"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+        "alt": "Brand Identity"
+      }
+    ]
+  }
+]
