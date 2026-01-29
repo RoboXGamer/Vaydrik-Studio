@@ -1,5 +1,8 @@
 ---
-import services from '../data/services.json';
+import { getCollection } from 'astro:content';
+
+const servicesData = await getCollection('services');
+const services = servicesData.map(entry => entry.data);
 ---
 <!-- Services Section -->
 <section class="services animated-bg" id="services">

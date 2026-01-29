@@ -1,8 +1,9 @@
 ---
-import testimonialsData from '../data/testimonials.json';
+import { getEntry } from 'astro:content';
 import TestimonialCard from './TestimonialCard.astro';
 
-const { testimonials } = testimonialsData;
+const testimonialsEntry = await getEntry('testimonials', 'testimonials-data');
+const { testimonials } = testimonialsEntry!.data;
 ---
 
 <!-- Testimonials Section -->

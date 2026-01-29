@@ -1,233 +1,236 @@
-{
-  "categories": [
-    {
-      "id": "wedding",
-      "label": "Weddings",
-      "items": [
-        {
-          "type": "video",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-          "category": "Wedding Film",
-          "title": "Elegant Wedding Ceremony",
-          "description": "A beautiful celebration of love captured in cinematic detail",
-          "tech": ["4K Filming", "Drone Shots"]
-        },
-        {
-          "type": "video",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-          "category": "Pre-Wedding",
-          "title": "Romantic Pre-Wedding Shoot",
-          "description": "Capturing the couple's journey before the big day",
-          "tech": ["Cinematic", "Color Grading"]
-        },
-        {
-          "type": "video",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-          "category": "Wedding Highlights",
-          "title": "Same-Day Edit",
-          "description": "Quick turnaround highlights for wedding reception",
-          "tech": ["Fast Edit", "Multi-Camera"]
-        },
-        {
-          "type": "video",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-          "category": "Destination Wedding",
-          "title": "Beach Wedding Film",
-          "description": "Destination wedding captured in stunning locations",
-          "tech": ["Travel", "Cinematic"]
-        }
-      ]
-    },
-    {
-      "id": "video",
-      "label": "Videography",
-      "items": [
-        {
-          "type": "video",
-          "isImagePreview": true,
-          "src": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=600&h=400&fit=crop",
-          "category": "Videography",
-          "title": "Corporate Brand Film",
-          "description": "A powerful brand story showcasing company values and mission",
-          "tech": ["4K Production", "Color Grading"]
-        },
-        {
-          "type": "video",
-          "isImagePreview": true,
-          "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
-          "category": "Commercial",
-          "title": "30-Second TV Spot",
-          "description": "High-impact commercial for retail brand",
-          "tech": ["Cinematography", "Sound Design"]
-        },
-        {
-          "type": "video",
-          "isImagePreview": true,
-          "src": "3.png",
-          "category": "Documentary",
-          "title": "Corporate Documentary",
-          "description": "Behind-the-scenes company culture film",
-          "tech": ["Interview Setup", "Multi-Camera"]
-        },
-        {
-          "type": "video",
-          "isImagePreview": true,
-          "src": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop",
-          "category": "Music Video",
-          "title": "Artist Music Video",
-          "description": "Creative music video with visual effects",
-          "tech": ["Visual Effects", "Creative Direction"]
-        }
-      ]
-    },
-    {
-      "id": "editing",
-      "label": "Video Editing",
-      "items": []
-    },
-    {
-      "id": "photo",
-      "label": "Photography",
-      "items": [
-        {
-          "type": "photo",
-          "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
-          "category": "Product",
-          "title": "Product Photography",
-          "description": "Clean, professional product shots",
-          "tech": ["Studio Setup", "Macro Lens"]
-        },
-        {
-          "type": "photo",
-          "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
-          "category": "Event",
-          "title": "Corporate Event",
-          "description": "Conference and networking event coverage",
-          "tech": ["Event Photography", "Low Light"]
-        },
-        {
-          "type": "photo",
-          "src": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
-          "category": "Architecture",
-          "title": "Architectural Photography",
-          "description": "Modern building exterior and interior shots",
-          "tech": ["Wide Angle", "HDR Processing"]
-        },
-        {
-          "type": "photo",
-          "src": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop",
-          "category": "Portrait",
-          "title": "Executive Portraits",
-          "description": "Professional headshots with dramatic lighting",
-          "tech": ["Studio Lighting", "Retouching"]
-        }
-      ]
-    },
-    {
-      "id": "animation",
-      "label": "Animation",
-      "items": [
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-          "category": "Character Animation",
-          "title": "3D Character Showcase",
-          "description": "Fully rigged and animated 3D character for gaming",
-          "tech": ["3D Animation", "Character Rigging"]
-        },
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-          "category": "Product Animation",
-          "title": "Product Reveal Animation",
-          "description": "Eye-catching 3D product animation for marketing",
-          "tech": ["3D Modeling", "Product Viz"]
-        },
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-          "category": "Animated Short",
-          "title": "Story-Driven Animation",
-          "description": "Creative animated short film with compelling narrative",
-          "tech": ["2D Animation", "Storytelling"]
-        },
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-          "category": "Animated Infographic",
-          "title": "Data Visualization",
-          "description": "Engaging animated infographic for data presentation",
-          "tech": ["Motion Design", "Data Viz"]
-        }
-      ]
-    },
-    {
-      "id": "motion",
-      "label": "Motion Graphics",
-      "items": [
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-          "category": "Explainer",
-          "title": "Animated Explainer",
-          "description": "Complex concepts simplified through animation",
-          "tech": ["2D Animation", "Infographics"]
-        },
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-          "category": "UI/UX",
-          "title": "App UI Animation",
-          "description": "Smooth interface transitions and interactions",
-          "tech": ["UI Animation", "Prototyping"]
-        },
-        {
-          "type": "motion",
-          "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-          "category": "Branding",
-          "title": "Logo Animation",
-          "description": "Dynamic logo reveal with smooth transitions",
-          "tech": ["After Effects", "2D Animation"]
-        }
-      ]
-    },
-    {
-      "id": "design",
-      "label": "Graphic Design",
-      "items": [
-        {
-          "type": "design",
-          "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=500&fit=crop",
-          "category": "Print Design",
-          "title": "Event Poster Series",
-          "description": "Eye-catching posters for music festival",
-          "tech": ["Print Design", "Typography"]
-        },
-        {
-          "type": "design",
-          "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=500&fit=crop",
-          "category": "Web Design",
-          "title": "E-commerce Website",
-          "description": "Modern, responsive web design",
-          "tech": ["UI Design", "Responsive"]
-        },
-        {
-          "type": "design",
-          "src": "https://images.unsplash.com/photo-1601506521793-dc748fc80b67?w=600&h=500&fit=crop",
-          "category": "Package Design",
-          "title": "Product Packaging",
-          "description": "Premium packaging design for luxury brand",
-          "tech": ["Package Design", "3D Mockups"]
-        },
-        {
-          "type": "design",
-          "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=500&fit=crop",
-          "category": "Brand Identity",
-          "title": "Complete Brand System",
-          "description": "Full brand identity for tech startup",
-          "tech": ["Logo Design", "Brand Guidelines"]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": "portfolio-data",
+    "categories": [
+      {
+        "id": "wedding",
+        "label": "Weddings",
+        "items": [
+          {
+            "type": "video",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "category": "Wedding Film",
+            "title": "Elegant Wedding Ceremony",
+            "description": "A beautiful celebration of love captured in cinematic detail",
+            "tech": ["4K Filming", "Drone Shots"]
+          },
+          {
+            "type": "video",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+            "category": "Pre-Wedding",
+            "title": "Romantic Pre-Wedding Shoot",
+            "description": "Capturing the couple's journey before the big day",
+            "tech": ["Cinematic", "Color Grading"]
+          },
+          {
+            "type": "video",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+            "category": "Wedding Highlights",
+            "title": "Same-Day Edit",
+            "description": "Quick turnaround highlights for wedding reception",
+            "tech": ["Fast Edit", "Multi-Camera"]
+          },
+          {
+            "type": "video",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+            "category": "Destination Wedding",
+            "title": "Beach Wedding Film",
+            "description": "Destination wedding captured in stunning locations",
+            "tech": ["Travel", "Cinematic"]
+          }
+        ]
+      },
+      {
+        "id": "video",
+        "label": "Videography",
+        "items": [
+          {
+            "type": "video",
+            "isImagePreview": true,
+            "src": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=600&h=400&fit=crop",
+            "category": "Videography",
+            "title": "Corporate Brand Film",
+            "description": "A powerful brand story showcasing company values and mission",
+            "tech": ["4K Production", "Color Grading"]
+          },
+          {
+            "type": "video",
+            "isImagePreview": true,
+            "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
+            "category": "Commercial",
+            "title": "30-Second TV Spot",
+            "description": "High-impact commercial for retail brand",
+            "tech": ["Cinematography", "Sound Design"]
+          },
+          {
+            "type": "video",
+            "isImagePreview": true,
+            "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
+            "category": "Documentary",
+            "title": "Corporate Documentary",
+            "description": "Behind-the-scenes company culture film",
+            "tech": ["Interview Setup", "Multi-Camera"]
+          },
+          {
+            "type": "video",
+            "isImagePreview": true,
+            "src": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop",
+            "category": "Music Video",
+            "title": "Artist Music Video",
+            "description": "Creative music video with visual effects",
+            "tech": ["Visual Effects", "Creative Direction"]
+          }
+        ]
+      },
+      {
+        "id": "editing",
+        "label": "Video Editing",
+        "items": []
+      },
+      {
+        "id": "photo",
+        "label": "Photography",
+        "items": [
+          {
+            "type": "photo",
+            "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
+            "category": "Product",
+            "title": "Product Photography",
+            "description": "Clean, professional product shots",
+            "tech": ["Studio Setup", "Macro Lens"]
+          },
+          {
+            "type": "photo",
+            "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
+            "category": "Event",
+            "title": "Corporate Event",
+            "description": "Conference and networking event coverage",
+            "tech": ["Event Photography", "Low Light"]
+          },
+          {
+            "type": "photo",
+            "src": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
+            "category": "Architecture",
+            "title": "Architectural Photography",
+            "description": "Modern building exterior and interior shots",
+            "tech": ["Wide Angle", "HDR Processing"]
+          },
+          {
+            "type": "photo",
+            "src": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop",
+            "category": "Portrait",
+            "title": "Executive Portraits",
+            "description": "Professional headshots with dramatic lighting",
+            "tech": ["Studio Lighting", "Retouching"]
+          }
+        ]
+      },
+      {
+        "id": "animation",
+        "label": "Animation",
+        "items": [
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+            "category": "Character Animation",
+            "title": "3D Character Showcase",
+            "description": "Fully rigged and animated 3D character for gaming",
+            "tech": ["3D Animation", "Character Rigging"]
+          },
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+            "category": "Product Animation",
+            "title": "Product Reveal Animation",
+            "description": "Eye-catching 3D product animation for marketing",
+            "tech": ["3D Modeling", "Product Viz"]
+          },
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "category": "Animated Short",
+            "title": "Story-Driven Animation",
+            "description": "Creative animated short film with compelling narrative",
+            "tech": ["2D Animation", "Storytelling"]
+          },
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+            "category": "Animated Infographic",
+            "title": "Data Visualization",
+            "description": "Engaging animated infographic for data presentation",
+            "tech": ["Motion Design", "Data Viz"]
+          }
+        ]
+      },
+      {
+        "id": "motion",
+        "label": "Motion Graphics",
+        "items": [
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+            "category": "Explainer",
+            "title": "Animated Explainer",
+            "description": "Complex concepts simplified through animation",
+            "tech": ["2D Animation", "Infographics"]
+          },
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+            "category": "UI/UX",
+            "title": "App UI Animation",
+            "description": "Smooth interface transitions and interactions",
+            "tech": ["UI Animation", "Prototyping"]
+          },
+          {
+            "type": "motion",
+            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+            "category": "Branding",
+            "title": "Logo Animation",
+            "description": "Dynamic logo reveal with smooth transitions",
+            "tech": ["After Effects", "2D Animation"]
+          }
+        ]
+      },
+      {
+        "id": "design",
+        "label": "Graphic Design",
+        "items": [
+          {
+            "type": "design",
+            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=500&fit=crop",
+            "category": "Print Design",
+            "title": "Event Poster Series",
+            "description": "Eye-catching posters for music festival",
+            "tech": ["Print Design", "Typography"]
+          },
+          {
+            "type": "design",
+            "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=500&fit=crop",
+            "category": "Web Design",
+            "title": "E-commerce Website",
+            "description": "Modern, responsive web design",
+            "tech": ["UI Design", "Responsive"]
+          },
+          {
+            "type": "design",
+            "src": "https://images.unsplash.com/photo-1601506521793-dc748fc80b67?w=600&h=500&fit=crop",
+            "category": "Package Design",
+            "title": "Product Packaging",
+            "description": "Premium packaging design for luxury brand",
+            "tech": ["Package Design", "3D Mockups"]
+          },
+          {
+            "type": "design",
+            "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=500&fit=crop",
+            "category": "Brand Identity",
+            "title": "Complete Brand System",
+            "description": "Full brand identity for tech startup",
+            "tech": ["Logo Design", "Brand Guidelines"]
+          }
+        ]
+      }
+    ]
+  }
+]

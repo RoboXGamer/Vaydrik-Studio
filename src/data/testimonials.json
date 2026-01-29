@@ -1,22 +1,25 @@
-{
-  "testimonials": [
-    {
-      "name": "Amit Sharma",
-      "designation": "Tech Startup • Brand Design",
-      "content": "Vaydrik completely transformed our brand identity. The attention to detail and understanding of our vision was exceptional. Highly recommend!",
-      "rating": 5
-    },
-    {
-      "name": "Priya Patel",
-      "designation": "E-commerce • Video Production",
-      "content": "The wedding film exceeded all expectations. Professional, creative, and delivered ahead of schedule. Our best decision ever!",
-      "rating": 5
-    },
-    {
-      "name": "Rahul Mehta",
-      "designation": "Restaurant • Photography",
-      "content": "Stunning photography that elevated our brand. The images have been crucial for our marketing success and social media growth.",
-      "rating": 5
-    }
-  ]
-}
+[
+  {
+    "id": "testimonials-data",
+    "testimonials": [
+      {
+        "name": "Amit Sharma",
+        "designation": "Tech Startup • Brand Design",
+        "content": "Vaydrik completely transformed our brand identity. The attention to detail and understanding of our vision was exceptional. Highly recommend!",
+        "rating": 5
+      },
+      {
+        "name": "Priya Patel",
+        "designation": "E-commerce • Video Production",
+        "content": "The wedding film exceeded all expectations. Professional, creative, and delivered ahead of schedule. Our best decision ever!",
+        "rating": 5
+      },
+      {
+        "name": "Rahul Mehta",
+        "designation": "Restaurant • Photography",
+        "content": "Stunning photography that elevated our brand. The images have been crucial for our marketing success and social media growth.",
+        "rating": 5
+      }
+    ]
+  }
+]

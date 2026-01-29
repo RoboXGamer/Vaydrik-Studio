@@ -1,5 +1,6 @@
 [
   {
+    "id": "wedding-videography",
     "number": "01",
     "slug": "wedding-videography",
     "title": "Wedding Videography",
@@ -37,6 +38,7 @@
     ]
   },
   {
+    "id": "videography-cinematography",
     "number": "02",
     "slug": "videography-cinematography",
     "title": "Videography & Cinematography",
@@ -74,6 +76,7 @@
     ]
   },
   {
+    "id": "professional-video-editing",
     "number": "03",
     "slug": "professional-video-editing",
     "title": "Professional Video Editing",
@@ -112,6 +115,7 @@
     ]
   },
   {
+    "id": "motion-graphics-animation",
     "number": "04",
     "slug": "motion-graphics-animation",
     "title": "Motion Graphics & Animation",
@@ -149,6 +153,7 @@
     ]
   },
   {
+    "id": "professional-photography",
     "number": "05",
     "slug": "professional-photography",
     "title": "Professional Photography",
@@ -186,6 +191,7 @@
     ]
   },
   {
+    "id": "brand-design-identity",
     "number": "06",
     "slug": "brand-design-identity",
     "title": "Brand Design & Identity",

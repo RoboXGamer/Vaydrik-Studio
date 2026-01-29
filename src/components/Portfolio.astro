@@ -1,8 +1,9 @@
 ---
-import portfolioData from '../data/portfolio.json';
+import { getEntry } from 'astro:content';
 import PortfolioItem from './PortfolioItem.astro';
 
-const { categories } = portfolioData;
+const portfolioData = await getEntry('portfolio', 'portfolio-data');
+const { categories } = portfolioData!.data;
 ---
 
 <!-- Portfolio Section -->

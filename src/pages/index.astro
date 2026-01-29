@@ -18,9 +18,16 @@ import MediaModal from '../components/MediaModal.astro';
 
 <Layout>
     <script is:inline>
-        if (sessionStorage.getItem('introPlayed')) {
-            document.documentElement.classList.add('intro-played');
+        function applyIntroPlayedClass() {
+            if (sessionStorage.getItem('introPlayed')) {
+                document.documentElement.classList.add('intro-played');
+            }
         }
+        
+        applyIntroPlayedClass();
+        
+        // Also apply when returning via view transitions
+        document.addEventListener('astro:after-swap', applyIntroPlayedClass);
     </script>
     <IntroScreen />
     <BlackDotScreen />
