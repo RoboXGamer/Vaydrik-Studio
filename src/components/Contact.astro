@@ -75,9 +75,7 @@
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            initContactLinks();
-        }, 1000);
+    document.addEventListener('astro:page-load', () => {
+        initContactLinks();
     });
 </script>

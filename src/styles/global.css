@@ -11,6 +11,38 @@ body {
   overflow-x: hidden;
 }
 
+/* Skip intro if already played in session */
+html.intro-played #intro-screen,
+html.intro-played #black-dot-screen {
+  display: none !important;
+}
+
+html.intro-played #main-content,
+html.intro-played #content-layer,
+html.intro-played .content-layer,
+html.intro-played .overlay-mask {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+/* View Transitions Optimization */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+}
+
+/* If we want to disable cross-fade totally and only use morphs, uncomment below */
+/*
+::view-transition-old(root) {
+  animation: none;
+}
+::view-transition-new(root) {
+  animation: none;
+}
+*/
+
 h1,
 h2,
 h3,
@@ -743,6 +775,19 @@ h6 {
   letter-spacing: 0.1em;
 }
 
+.service-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.service-cta.service-cta-secondary {
+  background: transparent;
+  border-color: rgba(168, 85, 247, 0.4);
+  color: #e9d5ff;
+}
+
 .service-cta:hover {
   background: linear-gradient(
     135deg,
@@ -752,6 +797,11 @@ h6 {
   border-color: #a855f7;
   transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(168, 85, 247, 0.3);
+}
+
+.service-cta.service-cta-secondary:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: #a855f7;
 }
 
 .service-visual {
@@ -1563,6 +1613,50 @@ footer {
   font-weight: 600;
 }
 
+/* Service Detail Page */
+.service-detail {
+  padding: 8rem 2rem 6rem;
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.service-detail-header {
+  max-width: 1400px;
+  margin: 0 auto 2rem;
+}
+
+.service-detail-back {
+  color: #a855f7;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.service-detail-back:hover {
+  color: #e9d5ff;
+}
+
+.service-detail-hero {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 3.5rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.service-detail-case-study {
+  max-width: 1400px;
+  margin: 3rem auto 0;
+}
+
 /* Service Pricing Box */
 .service-pricing {
   margin-top: 2rem;
@@ -1888,6 +1982,12 @@ footer {
 
   .service-container:hover .service-image-grid {
     transform: none;
+  }
+
+  .service-detail-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
   }
 
   .about-container {

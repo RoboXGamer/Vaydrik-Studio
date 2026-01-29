@@ -73,7 +73,7 @@
     });
 
     // Close modal when clicking outside content or on close button
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('astro:page-load', () => {
         document.getElementById('media-modal')?.addEventListener('click', (e) => {
             if ((e.target as HTMLElement).id === 'media-modal') {
                 closeModal();

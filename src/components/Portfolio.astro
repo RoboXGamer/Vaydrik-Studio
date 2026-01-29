@@ -110,11 +110,9 @@ const { categories } = portfolioData;
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            initPortfolioTabs();
-            initVideoHovers();
-            initPortfolioMediaModal();
-        }, 1000);
+    document.addEventListener('astro:page-load', () => {
+        initPortfolioTabs();
+        initVideoHovers();
+        initPortfolioMediaModal();
     });
 </script>

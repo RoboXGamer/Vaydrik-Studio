@@ -61,10 +61,19 @@
     }
 
     // Animate gallery rows appearing one by one in zigzag pattern
-    export function animateGalleryReveal() {
+    export function animateGalleryReveal(skip = false) {
         const rows = document.querySelectorAll('.image-row');
         const overlayMask = document.querySelector('.overlay-mask');
         
+        if (skip) {
+            rows.forEach((row, index) => {
+                const fromLeft = index % 2 === 0;
+                row.classList.add(fromLeft ? 'continuous-left' : 'continuous-right');
+            });
+            overlayMask?.classList.add('visible');
+            return;
+        }
+
         let animationCompleteCount = 0;
         
         rows.forEach((row, index) => {
@@ -109,7 +118,7 @@
     (window as any).createGalleryRows = createGalleryRows;
     (window as any).animateGalleryReveal = animateGalleryReveal;
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('astro:page-load', () => {
         createGalleryRows();
     });
 </script>

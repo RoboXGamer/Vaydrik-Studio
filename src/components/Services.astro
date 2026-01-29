@@ -16,8 +16,8 @@ import services from '../data/services.json';
         <div class="service-section">
             <div class={`service-container ${service.reverse ? "reverse" : ""}`}>
                 <div class="service-content">
-                    <div class="service-number">{service.number}</div>
-                    <h3 class="service-title">{service.title}</h3>
+                    <div class="service-number" transition:name={`service-number-${service.slug}`}>{service.number}</div>
+                    <h3 class="service-title" transition:name={`service-title-${service.slug}`}>{service.title}</h3>
                     <p class="service-description">
                         {service.description}
                     </p>
@@ -26,29 +26,9 @@ import services from '../data/services.json';
                             <li>{feature}</li>
                         ))}
                     </ul>
-
-                    {/* Case Study */}
-                    <div class="service-case-study">
-                        <div class="case-study-header">Case Study</div>
-                        <div class="case-study-grid">
-                            <div class="case-study-item">
-                                <div class="case-study-label">The Problem</div>
-                                <p class="case-study-text">{service.caseStudy.problem}</p>
-                            </div>
-                            <div class="case-study-item">
-                                <div class="case-study-label">Our Process</div>
-                                <p class="case-study-text">{service.caseStudy.process}</p>
-                            </div>
-                            <div class="case-study-item">
-                                <div class="case-study-label">The Result</div>
-                                <p class="case-study-text case-study-result">{service.caseStudy.result}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href={service.cta.link} class="service-cta">{service.cta.text}</a>
+                    <a href={`/services/${service.slug}`} class="service-cta service-cta-secondary">View Case Study</a>
                 </div>
-                <div class="service-visual">
+                <div class="service-visual" transition:name={`service-visual-${service.slug}`}>
                     <div class="service-image-grid">
                         {service.visual.map((image) => (
                             <div class="service-image">
@@ -119,11 +99,9 @@ import services from '../data/services.json';
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            initServiceAnimations();
-            initServiceCTAs();
-            initFloatingElements();
-        }, 1000);
+    document.addEventListener('astro:page-load', () => {
+        initServiceAnimations();
+        initServiceCTAs();
+        initFloatingElements();
     });
 </script>

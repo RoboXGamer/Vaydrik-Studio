@@ -1,0 +1,65 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import services from '../../data/services.json';
+
+export function getStaticPaths() {
+  return services.map((service) => ({
+    params: { slug: service.slug },
+    props: { service },
+  }));
+}
+
+const { service } = Astro.props;
+---
+
+<Layout>
+  <section class="service-detail">
+    <div class="service-detail-header">
+      <a class="service-detail-back" href="/#services">← Back to Services</a>
+    </div>
+
+    <div class="service-detail-hero">
+      <div class="service-detail-content">
+        <div class="service-number" transition:name={`service-number-${service.slug}`}>{service.number}</div>
+        <h1 class="service-title" transition:name={`service-title-${service.slug}`}>{service.title}</h1>
+        <p class="service-description">{service.description}</p>
+
+        <ul class="service-features">
+          {service.features.map((feature) => (
+            <li>{feature}</li>
+          ))}
+        </ul>
+      </div>
+
+      <div class="service-visual" transition:name={`service-visual-${service.slug}`}>
+        <div class="service-image-grid">
+          {service.visual.map((image) => (
+            <div class="service-image">
+              <img src={image.src} alt={image.alt} style={image.style} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <div class="service-detail-case-study">
+      <div class="service-case-study">
+        <div class="case-study-header">Case Study</div>
+        <div class="case-study-grid">
+          <div class="case-study-item">
+            <div class="case-study-label">The Problem</div>
+            <p class="case-study-text">{service.caseStudy.problem}</p>
+          </div>
+          <div class="case-study-item">
+            <div class="case-study-label">Our Process</div>
+            <p class="case-study-text">{service.caseStudy.process}</p>
+          </div>
+          <div class="case-study-item">
+            <div class="case-study-label">The Result</div>
+            <p class="case-study-text case-study-result">{service.caseStudy.result}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

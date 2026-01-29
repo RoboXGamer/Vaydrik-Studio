@@ -60,9 +60,7 @@
         counters.forEach(counter => counterObserver.observe(counter));
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        setTimeout(() => {
-            animateCounters();
-        }, 1000);
+    document.addEventListener('astro:page-load', () => {
+        animateCounters();
     });
 </script>

@@ -1,6 +1,7 @@
 [
   {
     "number": "01",
+    "slug": "wedding-videography",
     "title": "Wedding Videography",
     "description": "Preserve your special day with cinematic wedding films that capture every emotion, every detail, and every magical moment. We create timeless wedding videos that you'll treasure forever.",
     "reverse": false,
@@ -18,7 +19,7 @@
     },
     "cta": {
       "text": "Book Your Wedding",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
@@ -37,6 +38,7 @@
   },
   {
     "number": "02",
+    "slug": "videography-cinematography",
     "title": "Videography & Cinematography",
     "description": "We craft compelling video narratives that captivate audiences and drive results. From concept to post-production, our cinematic approach ensures every frame tells your story.",
     "reverse": true,
@@ -54,7 +56,7 @@
     },
     "cta": {
       "text": "Start Your Project",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
@@ -73,6 +75,7 @@
   },
   {
     "number": "03",
+    "slug": "professional-video-editing",
     "title": "Professional Video Editing",
     "description": "Transform your raw footage into polished, professional videos with our expert editing services. We enhance storytelling through precise cuts, color grading, sound design, and visual effects.",
     "reverse": false,
@@ -90,7 +93,7 @@
     },
     "cta": {
       "text": "Get Started",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
@@ -110,6 +113,7 @@
   },
   {
     "number": "04",
+    "slug": "motion-graphics-animation",
     "title": "Motion Graphics & Animation",
     "description": "Bring your ideas to life with stunning motion graphics and animations. We create dynamic visual experiences that engage and inform your audience.",
     "reverse": true,
@@ -127,7 +131,7 @@
     },
     "cta": {
       "text": "Animate Your Vision",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
@@ -146,6 +150,7 @@
   },
   {
     "number": "05",
+    "slug": "professional-photography",
     "title": "Professional Photography",
     "description": "Capture moments that matter with our professional photography services. From portraits to products, we deliver images that leave lasting impressions.",
     "reverse": false,
@@ -163,7 +168,7 @@
     },
     "cta": {
       "text": "Book a Shoot",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
@@ -182,6 +187,7 @@
   },
   {
     "number": "06",
+    "slug": "brand-design-identity",
     "title": "Brand Design & Identity",
     "description": "Create a distinctive brand identity that resonates with your target audience. From logos to complete brand systems, we build brands that stand out.",
     "reverse": true,
@@ -199,7 +205,7 @@
     },
     "cta": {
       "text": "Build Your Brand",
-      "link": "#contact"
+      "link": "/#contact"
     },
     "visual": [
       {
