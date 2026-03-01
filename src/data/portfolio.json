@@ -8,35 +8,27 @@
         "items": [
           {
             "type": "video",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
             "category": "Wedding Film",
-            "title": "Elegant Wedding Ceremony",
-            "description": "A beautiful celebration of love captured in cinematic detail",
-            "tech": ["4K Filming", "Drone Shots"]
+            "title": "Weddding",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Weddings/weddding.mp4"
           },
           {
             "type": "video",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-            "category": "Pre-Wedding",
-            "title": "Romantic Pre-Wedding Shoot",
-            "description": "Capturing the couple's journey before the big day",
-            "tech": ["Cinematic", "Color Grading"]
+            "category": "Wedding Film",
+            "title": "Weddin 2",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Weddings/weddin 2.mp4"
           },
           {
             "type": "video",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-            "category": "Wedding Highlights",
-            "title": "Same-Day Edit",
-            "description": "Quick turnaround highlights for wedding reception",
-            "tech": ["Fast Edit", "Multi-Camera"]
-          },
-          {
-            "type": "video",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-            "category": "Destination Wedding",
-            "title": "Beach Wedding Film",
-            "description": "Destination wedding captured in stunning locations",
-            "tech": ["Travel", "Cinematic"]
+            "category": "Wedding Film",
+            "title": "Wedding",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Weddings/wedding.mp4"
           }
         ]
       },
@@ -46,46 +38,89 @@
         "items": [
           {
             "type": "video",
-            "isImagePreview": true,
-            "src": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=600&h=400&fit=crop",
             "category": "Videography",
-            "title": "Corporate Brand Film",
-            "description": "A powerful brand story showcasing company values and mission",
-            "tech": ["4K Production", "Color Grading"]
-          },
-          {
-            "type": "video",
-            "isImagePreview": true,
-            "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
-            "category": "Commercial",
-            "title": "30-Second TV Spot",
-            "description": "High-impact commercial for retail brand",
-            "tech": ["Cinematography", "Sound Design"]
-          },
-          {
-            "type": "video",
-            "isImagePreview": true,
-            "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=600&h=400&fit=crop",
-            "category": "Documentary",
-            "title": "Corporate Documentary",
-            "description": "Behind-the-scenes company culture film",
-            "tech": ["Interview Setup", "Multi-Camera"]
-          },
-          {
-            "type": "video",
-            "isImagePreview": true,
-            "src": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=600&h=400&fit=crop",
-            "category": "Music Video",
-            "title": "Artist Music Video",
-            "description": "Creative music video with visual effects",
-            "tech": ["Visual Effects", "Creative Direction"]
+            "title": "Document From Garggaurav220",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Videography/Document from garggaurav220.mp4"
           }
         ]
       },
       {
-        "id": "editing",
-        "label": "Video Editing",
-        "items": []
+        "id": "animation-2d",
+        "label": "2D Animations",
+        "items": [
+          {
+            "type": "motion",
+            "category": "2D Animation",
+            "title": "L1 U13 Song   That'S My Sweater (4)",
+            "description": "",
+            "tech": [],
+            "video": "/assets/2d-Animation/L1 U13 Song - That's My Sweater (4).mp4"
+          },
+          {
+            "type": "motion",
+            "category": "2D Animation",
+            "title": "Pro Relix Animation  (1)",
+            "description": "",
+            "tech": [],
+            "video": "/assets/2d-Animation/PRO RELIX ANIMATION_ (1).mp4"
+          },
+          {
+            "type": "motion",
+            "category": "2D Animation",
+            "title": "Us Don  Gasvigil V02",
+            "description": "",
+            "tech": [],
+            "video": "/assets/2d-Animation/US Don- Gasvigil_v02.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "2D Animation",
+            "title": "Vid 20251224 Wa0010",
+            "description": "",
+            "tech": [],
+            "video": "/assets/2d-Animation/VID-20251224-WA0010.mp4"
+          }
+        ]
+      },
+      {
+        "id": "animation-3d",
+        "label": "3D Animations",
+        "items": [
+          {
+            "type": "motion",
+            "category": "3D Animation",
+            "title": "Bt Tower",
+            "description": "",
+            "tech": [],
+            "video": "/assets/3d-Animation/BT Tower.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "3D Animation",
+            "title": "Media Animation",
+            "description": "",
+            "tech": [],
+            "video": "/assets/3d-Animation/Media Animation.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Product Animations",
+            "title": "Car Reel",
+            "description": "",
+            "tech": [],
+            "video": "/assets/3d-Animation/Product Animations/Car Reel.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Product Animations",
+            "title": "Realistic Headphone",
+            "description": "",
+            "tech": [],
+            "video": "/assets/3d-Animation/Product Animations/Realistic Headphone.mp4"
+          }
+        ]
       },
       {
         "id": "photo",
@@ -93,73 +128,475 @@
         "items": [
           {
             "type": "photo",
-            "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=400&fit=crop",
+            "category": "Clothing",
+            "title": "0W4A0299",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/0W4A0299.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "0W4A0405",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/0W4A0405.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "0W4A0421",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/0W4A0421.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "0W4A0446",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/0W4A0446.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "165580599531",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/165580599531.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "1655805995350",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/1655805995350.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "1655805995387",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/1655805995387.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "1655805995467",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/1655805995467.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "20230914 155310 (1) Transformed (3)",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/20230914_155310_(1)-transformed (3).jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "20230914 155310 (1) Transformed (3)",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/20230914_155310_(1)-transformed (3).jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "Img 1542",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/IMG_1542.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "Img 1545",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/IMG_1545.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "Img 3519",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/IMG_3519.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": "Img 3523",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/IMG_3523.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Clothing",
+            "title": " 20230914 155248",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Clothing Photography/_20230914_155248.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1626483351617 1",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1626483351617-1.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1654604990964 2",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1654604990964-2.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1654604991054",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1654604991054.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1656010291431",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1656010291431.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1722265332 Img 20240516 214337",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1722265332-IMG_20240516_214337.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1722265352 Img 20230404 120504",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1722265352-IMG_20230404_120504.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1722265355 1654604991018",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1722265355-1654604991018.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1722265357 1654604990982 1",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1722265357-1654604990982-1.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "1722265364 1626483570880",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/1722265364-1626483570880.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Dsc 0042Lkv",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/DSC_0042lkv.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Dsc 0112",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/DSC_0112.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Dsc 0124",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/DSC_0124.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Dsc 0134",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/DSC_0134.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Img 20210712 Wa0035",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/IMG-20210712-WA0035.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Img 20220223 Wa0037",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/IMG-20220223-WA0037.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Img 20220223 Wa0040",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/IMG-20220223-WA0040.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Img 20220223 Wa0050",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/IMG-20220223-WA0050.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Img 20220927 Wa0037 1",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/IMG-20220927-WA0037-1.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Food",
+            "title": "Kk4",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Food Photography/kk4.jpg"
+          },
+          {
+            "type": "photo",
             "category": "Product",
-            "title": "Product Photography",
-            "description": "Clean, professional product shots",
-            "tech": ["Studio Setup", "Macro Lens"]
+            "title": "002",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/002.jpg"
           },
           {
             "type": "photo",
-            "src": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
-            "category": "Event",
-            "title": "Corporate Event",
-            "description": "Conference and networking event coverage",
-            "tech": ["Event Photography", "Low Light"]
+            "category": "Product",
+            "title": "1",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/1.jpg"
           },
           {
             "type": "photo",
-            "src": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop",
-            "category": "Architecture",
-            "title": "Architectural Photography",
-            "description": "Modern building exterior and interior shots",
-            "tech": ["Wide Angle", "HDR Processing"]
+            "category": "Product",
+            "title": "16558951242.",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/16558951242..jpg"
           },
           {
             "type": "photo",
-            "src": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop",
-            "category": "Portrait",
-            "title": "Executive Portraits",
-            "description": "Professional headshots with dramatic lighting",
-            "tech": ["Studio Lighting", "Retouching"]
-          }
-        ]
-      },
-      {
-        "id": "animation",
-        "label": "Animation",
-        "items": [
-          {
-            "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-            "category": "Character Animation",
-            "title": "3D Character Showcase",
-            "description": "Fully rigged and animated 3D character for gaming",
-            "tech": ["3D Animation", "Character Rigging"]
+            "category": "Product",
+            "title": "16559245870",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/16559245870.jpg"
           },
           {
-            "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-            "category": "Product Animation",
-            "title": "Product Reveal Animation",
-            "description": "Eye-catching 3D product animation for marketing",
-            "tech": ["3D Modeling", "Product Viz"]
+            "type": "photo",
+            "category": "Product",
+            "title": "18",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/18.jpg"
           },
           {
-            "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-            "category": "Animated Short",
-            "title": "Story-Driven Animation",
-            "description": "Creative animated short film with compelling narrative",
-            "tech": ["2D Animation", "Storytelling"]
+            "type": "photo",
+            "category": "Product",
+            "title": "3",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/3.jpg"
           },
           {
-            "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-            "category": "Animated Infographic",
-            "title": "Data Visualization",
-            "description": "Engaging animated infographic for data presentation",
-            "tech": ["Motion Design", "Data Viz"]
+            "type": "photo",
+            "category": "Product",
+            "title": "4",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/4.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Product",
+            "title": "Beauty Skin Product",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/beauty skin product.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Product",
+            "title": "Cosmetic Item Shoot Pic 4",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/cosmetic item shoot pic 4.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Product",
+            "title": "Cosmetic Shoot  Pic 2",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/cosmetic shoot  pic 2.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Product",
+            "title": "Perfume Shoot",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Product Photography/perfume shoot.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "044A2278",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/044A2278.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "111",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/111.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "1659193501866",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/1659193501866.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "1659194181182",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/1659194181182.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "1659195688957",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/1659195688957.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "1659195688991",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/1659195688991.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "D6301Dcd 864B 4Fa4 994E 9Fb442Bb3E14",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/D6301DCD-864B-4FA4-994E-9FB442BB3E14.JPG"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "Img 20210701 Wa0045",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/IMG-20210701-WA0045.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "Img 20210701 Wa0080",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/IMG-20210701-WA0080.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": "Img 20210701 Wa0087",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/IMG-20210701-WA0087.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": " 6  0405 2",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/_6__0405-2.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": " P0A6373",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/_P0A6373.jpg"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": " P0A9212",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/_P0A9212.JPG"
+          },
+          {
+            "type": "photo",
+            "category": "Wedding",
+            "title": " U5A6441",
+            "description": "",
+            "tech": [],
+            "image": "../assets/Photography/Wedding Photography/_U5A6441.JPG"
           }
         ]
       },
@@ -169,67 +606,66 @@
         "items": [
           {
             "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-            "category": "Explainer",
-            "title": "Animated Explainer",
-            "description": "Complex concepts simplified through animation",
-            "tech": ["2D Animation", "Infographics"]
+            "category": "Motion Graphic",
+            "title": "1626486806553",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/1626486806553.mp4"
           },
           {
             "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-            "category": "UI/UX",
-            "title": "App UI Animation",
-            "description": "Smooth interface transitions and interactions",
-            "tech": ["UI Animation", "Prototyping"]
+            "category": "Motion Graphic",
+            "title": "Advid Work File",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/advid work file.mp4"
           },
           {
             "type": "motion",
-            "src": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-            "category": "Branding",
-            "title": "Logo Animation",
-            "description": "Dynamic logo reveal with smooth transitions",
-            "tech": ["After Effects", "2D Animation"]
+            "category": "Motion Graphic",
+            "title": "Food Advertisement",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/food advertisement.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Motion Graphic",
+            "title": "Jobexpo V.007",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/JobExpo_V.007.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Motion Graphic",
+            "title": "Motion Graphic Portfolio 1",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/motion graphic portfolio 1.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Motion Graphic",
+            "title": "Vday",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/Vday.mp4"
+          },
+          {
+            "type": "motion",
+            "category": "Motion Graphic",
+            "title": "Vid 20191018 Wa0081",
+            "description": "",
+            "tech": [],
+            "video": "/assets/Motion Graphic/VID-20191018-WA0081.mp4"
           }
         ]
       },
       {
-        "id": "design",
-        "label": "Graphic Design",
-        "items": [
-          {
-            "type": "design",
-            "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=500&fit=crop",
-            "category": "Print Design",
-            "title": "Event Poster Series",
-            "description": "Eye-catching posters for music festival",
-            "tech": ["Print Design", "Typography"]
-          },
-          {
-            "type": "design",
-            "src": "https://images.unsplash.com/photo-1485846234645-a62644f84728?w=600&h=500&fit=crop",
-            "category": "Web Design",
-            "title": "E-commerce Website",
-            "description": "Modern, responsive web design",
-            "tech": ["UI Design", "Responsive"]
-          },
-          {
-            "type": "design",
-            "src": "https://images.unsplash.com/photo-1601506521793-dc748fc80b67?w=600&h=500&fit=crop",
-            "category": "Package Design",
-            "title": "Product Packaging",
-            "description": "Premium packaging design for luxury brand",
-            "tech": ["Package Design", "3D Mockups"]
-          },
-          {
-            "type": "design",
-            "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=500&fit=crop",
-            "category": "Brand Identity",
-            "title": "Complete Brand System",
-            "description": "Full brand identity for tech startup",
-            "tech": ["Logo Design", "Brand Guidelines"]
-          }
-        ]
+        "id": "brand-designing",
+        "label": "Brand Designing",
+        "items": []
       }
     ]
   }

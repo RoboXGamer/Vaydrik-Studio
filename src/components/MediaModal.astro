@@ -3,10 +3,6 @@
     <div class="media-modal-content">
         <button class="modal-close" id="modal-close">&times;</button>
         <div id="modal-media"></div>
-        <div class="modal-info" id="modal-info">
-            <h3 id="modal-title"></h3>
-            <p id="modal-description"></p>
-        </div>
     </div>
 </div>
 
@@ -14,14 +10,10 @@
     function openModal(item: HTMLElement) {
         const modal = document.getElementById('media-modal');
         const modalMedia = document.getElementById('modal-media');
-        const modalTitle = document.getElementById('modal-title');
-        const modalDescription = document.getElementById('modal-description');
 
         // Get media content
         const video = item.querySelector('video');
         const image = item.querySelector('img');
-        const title = item.querySelector('.portfolio-title')?.textContent || 'Portfolio Item';
-        const description = item.querySelector('.portfolio-description')?.textContent || 'Creative work showcase';
 
         // Clear previous content
         if (modalMedia) modalMedia.innerHTML = '';
@@ -29,18 +21,39 @@
         // Add media to modal
         if (video && video.querySelector('source')) {
             const modalVideo = video.cloneNode(true) as HTMLVideoElement;
+            modalVideo.removeAttribute('style');
+            modalVideo.removeAttribute('width');
+            modalVideo.removeAttribute('height');
             modalVideo.controls = true;
             modalVideo.muted = false;
             modalVideo.autoplay = false;
+            modalVideo.style.width = 'auto';
+            modalVideo.style.height = 'auto';
+            modalVideo.style.maxWidth = '100%';
+            modalVideo.style.maxHeight = '90vh';
+            modalVideo.style.objectFit = 'contain';
+            modalVideo.style.borderRadius = '12px';
+            modalVideo.style.display = 'block';
             modalMedia?.appendChild(modalVideo);
         } else if (image) {
             const modalImage = image.cloneNode(true) as HTMLImageElement;
+            
+            // Clear all inline styles and attributes that cause distortion
+            modalImage.removeAttribute('style');
+            modalImage.removeAttribute('width');
+            modalImage.removeAttribute('height');
+            
+            // Apply modal-specific styles
+            modalImage.style.width = 'auto';
+            modalImage.style.height = 'auto';
+            modalImage.style.maxWidth = '100%';
+            modalImage.style.maxHeight = '90vh';
+            modalImage.style.objectFit = 'contain';
+            modalImage.style.borderRadius = '12px';
+            modalImage.style.display = 'block';
+            
             modalMedia?.appendChild(modalImage);
         }
-
-        // Set info
-        if (modalTitle) modalTitle.textContent = title;
-        if (modalDescription) modalDescription.textContent = description;
 
         // Show modal
         modal?.classList.add('active');

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const servicesData = await getCollection('services');
 const services = servicesData.map(entry => entry.data);
@@ -33,9 +34,19 @@ const services = servicesData.map(entry => entry.data);
                 </div>
                 <div class="service-visual" transition:name={`service-visual-${service.slug}`}>
                     <div class="service-image-grid">
-                        {service.visual.map((image) => (
+                        {service.visual.map((viz) => (
                             <div class="service-image">
-                                <img src={image.src} alt={image.alt} />
+                                {viz.image ? (
+                                    typeof viz.image === 'string' ? (
+                                        <img src={viz.image} alt={viz.alt} />
+                                    ) : (
+                                        <Image src={viz.image} alt={viz.alt} layout="constrained" />
+                                    )
+                                ) : (
+                                    viz.video && (
+                                        <video src={viz.video} muted loop playsinline autoplay></video>
+                                    )
+                                )}
                             </div>
                         ))}
                     </div>

@@ -24,16 +24,16 @@
     },
     "visual": [
       {
-        "src": "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=600&fit=crop",
-        "alt": "Wedding Videography"
+        "alt": "Wedding Videography",
+        "image": "https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=600&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=300&fit=crop",
-        "alt": "Wedding Ceremony"
+        "alt": "Wedding Ceremony",
+        "image": "https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&h=300&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=300&fit=crop",
-        "alt": "Wedding Coverage"
+        "alt": "Wedding Coverage",
+        "image": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400&h=300&fit=crop"
       }
     ]
   },
@@ -62,16 +62,16 @@
     },
     "visual": [
       {
-        "src": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=400&h=600&fit=crop",
-        "alt": "Video Production"
+        "alt": "Video Production",
+        "image": "https://plus.unsplash.com/premium_photo-1682146739433-5926577acb7a?w=400&h=600&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop",
-        "alt": "Cinematography"
+        "alt": "Cinematography",
+        "image": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=300&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1634680582783-0b06ca18a449?w=400&h=300&fit=crop",
-        "alt": "Film Equipment"
+        "alt": "Film Equipment",
+        "image": "https://images.unsplash.com/photo-1634680582783-0b06ca18a449?w=400&h=300&fit=crop"
       }
     ]
   },
@@ -100,17 +100,17 @@
     },
     "visual": [
       {
-        "src": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=1000&h=600&fit=crop",
         "alt": "Video Editing",
-        "style": "object-fit: cover; object-position: 30% center;"
+        "style": "object-fit: cover; object-position: 30% center;",
+        "image": "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?w=1000&h=600&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1605826832916-d0ea9d6fe71e?w=400&h=300&fit=crop",
-        "alt": "Post Production"
+        "alt": "Post Production",
+        "image": "https://images.unsplash.com/photo-1605826832916-d0ea9d6fe71e?w=400&h=300&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop",
-        "alt": "Editing Suite"
+        "alt": "Editing Suite",
+        "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400&h=300&fit=crop"
       }
     ]
   },
@@ -139,16 +139,16 @@
     },
     "visual": [
       {
-        "src": "https://images.unsplash.com/photo-1628494391268-c9935bc384d5?w=400&h=600&fit=crop",
-        "alt": "Motion Graphics"
+        "alt": "Motion Graphics",
+        "image": "https://images.unsplash.com/photo-1628494391268-c9935bc384d5?w=400&h=600&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop",
-        "alt": "3D Animation"
+        "alt": "3D Animation",
+        "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&h=300&fit=crop"
       },
       {
-        "src": "/2.png",
-        "alt": "Visual Effects"
+        "alt": "Visual Effects",
+        "image": "../assets/2.png"
       }
     ]
   },
@@ -177,16 +177,16 @@
     },
     "visual": [
       {
-        "src": "https://images.unsplash.com/photo-1724627559656-9652a42c7e91?w=400&h=600&fit=crop",
-        "alt": "Professional Photography"
+        "alt": "Professional Photography",
+        "image": "https://images.unsplash.com/photo-1724627559656-9652a42c7e91?w=400&h=600&fit=crop"
       },
       {
-        "src": "/1.png",
-        "alt": "Portrait Session"
+        "alt": "Portrait Session",
+        "image": "../assets/1.png"
       },
       {
-        "src": "https://images.unsplash.com/photo-1671019793759-077ea7536f10?w=400&h=600&fit=crop",
-        "alt": "Professional Photography"
+        "alt": "Professional Photography",
+        "image": "https://images.unsplash.com/photo-1671019793759-077ea7536f10?w=400&h=600&fit=crop"
       }
     ]
   },
@@ -215,16 +215,16 @@
     },
     "visual": [
       {
-        "src": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=600&fit=crop",
-        "alt": "Brand Design"
+        "alt": "Brand Design",
+        "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=600&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
-        "alt": "Logo Design"
+        "alt": "Logo Design",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop"
       },
       {
-        "src": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
-        "alt": "Brand Identity"
+        "alt": "Brand Identity",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop"
       }
     ]
   }
