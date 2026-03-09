@@ -26,7 +26,7 @@
             modalVideo.removeAttribute('height');
             modalVideo.controls = true;
             modalVideo.muted = false;
-            modalVideo.autoplay = false;
+            modalVideo.autoplay = true;
             modalVideo.style.width = 'auto';
             modalVideo.style.height = 'auto';
             modalVideo.style.maxWidth = '100%';
@@ -35,6 +35,12 @@
             modalVideo.style.borderRadius = '12px';
             modalVideo.style.display = 'block';
             modalMedia?.appendChild(modalVideo);
+            // attempt to play after appending
+            setTimeout(() => {
+                modalVideo.play().catch(() => {
+                    // play might fail due to browser policy; ignore
+                });
+            }, 0);
         } else if (image) {
             const modalImage = image.cloneNode(true) as HTMLImageElement;
             
