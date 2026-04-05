@@ -4,7 +4,7 @@
 		"categories": [
 			{
 				"id": "wedding",
-				"label": "Weddings",
+				"label": "Videography",
 				"items": [
 					{
 						"type": "video",
@@ -29,20 +29,30 @@
 						"description": "",
 						"tech": [],
 						"video": "/assets/Weddings/wedding.mp4"
-					}
-				]
-			},
-			{
-				"id": "video",
-				"label": "Videography",
-				"items": [
+					},
 					{
 						"type": "video",
 						"category": "Videography",
-						"title": "Document From Garggaurav220",
+						"title": "Videography 1",
 						"description": "",
 						"tech": [],
-						"video": "/assets/Videography/Document from garggaurav220.mp4"
+						"video": "https://p15lk9do6h.ufs.sh/f/6xh6vKpIKVCs2YybL0BuaHQ0A5v8dDzU7Nf93somJb4kRgEK"
+					},
+					{
+						"type": "video",
+						"category": "Videography",
+						"title": "Videography 2",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775373105/vaydrik/videography/videography-2.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Videography",
+						"title": "Videography 3",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775373157/vaydrik/videography/videography-3.mp4"
 					}
 				]
 			},
@@ -119,7 +129,96 @@
 			{
 				"id": "video-editing",
 				"label": "Video Editing",
-				"items": []
+				"items": [
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 1",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-1.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 2",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-2.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 3",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-3.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 4",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-4.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 5",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-5.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 6",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-6.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 7",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-7.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 8",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-8.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 9",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-9.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 10",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-10.mp4"
+					},
+					{
+						"type": "video",
+						"category": "Video Editing",
+						"title": "Video Editing 11",
+						"description": "",
+						"tech": [],
+						"video": "https://res.cloudinary.com/creativeim/video/upload/v1775371642/vaydrik/video-editing/video-editing-11.mp4"
+					}
+				]
 			},
 			{
 				"id": "photo",
@@ -664,7 +763,520 @@
 			{
 				"id": "brand-designing",
 				"label": "Brand Designing",
-				"items": []
+				"items": [
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "1",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-1.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "10 (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-2.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "10",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-3.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "11",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-4.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "12",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-5.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "13",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-6.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "14",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-7.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "15",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-8.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "16",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-9.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "2",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-10.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "3",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-11.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "4",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-12.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "5",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-13.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "6",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-14.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "7",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-15.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "8",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-16.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "9",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-17.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Byd Story02",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-18.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Bydatto3 02",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-19.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Because The Best Stories Arenât Told, Theyâre Lived. From Night Drives To Campfire Laughs, Hyundai Makes Every Friendship Journey Feel Like Home. Happy Friendship Day",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-20.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Decode Game Night Story (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-21.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Decode Game Night Story (2)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-22.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Friendship Day (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-23.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Friendship Day (3)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-24.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Gallops Father's Day (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-25.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Greycalefrontvire",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-26.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Grow Your Career With Gallops Hyundai Committed To Growth & Successpng",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-27.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Gujpreneureventstory",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-28.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Hyundai Showroom Location002",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-29.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratifatherday (2)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-30.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "P&sassociat011",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-31.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Weâre Hiring Â Marketing Manager Join Maserati West India (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-32.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Brochure",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-33.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Bydyogaday",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-34.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Bydyogaday01",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-35.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Bydport01",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-36.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Decodescreen (1)",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-37.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Envirnoment",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-38.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Gallopsbanner",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-39.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Greycale02",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-40.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Masaratiref",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-41.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratiback",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-42.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratifather",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-43.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratiport01",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-44.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratiport02",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-45.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratiport03",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-46.jpeg"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Maseratiport04",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-47.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Package Dersign.jpg",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-48.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Packaging Dersign 2",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-49.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Packaging Design 3",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-50.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Packaging Work Design 1",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-51.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport01",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-52.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport02",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-53.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport03",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-54.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport04",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-55.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport05",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-56.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport06",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-57.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport07",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-58.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport08",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-59.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport09",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-60.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Pawfectport10",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-61.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Poster",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-62.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Social Media Designs",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-63.png"
+					},
+					{
+						"type": "photo",
+						"category": "Brand Designing",
+						"title": "Vitamins Packaging",
+						"description": "",
+						"tech": [],
+						"image": "../assets/Brand-Design/bd-64.png"
+					}
+				]
 			}
 		]
 	}

@@ -1,9 +1,23 @@
 ---
 import { getEntry } from 'astro:content';
 import PortfolioItem from './PortfolioItem.astro';
+import Tabs from './Tabs.astro';
 
 const portfolioData = await getEntry('portfolio', 'portfolio-data');
 const { categories } = portfolioData!.data;
+
+const photoGroups = (items) => {
+    const groupMap = new Map();
+    items.forEach((item) => {
+        const label = item.category || 'All';
+        const id = label.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        if (!groupMap.has(label)) {
+            groupMap.set(label, { id, label, items: [] });
+        }
+        groupMap.get(label).items.push(item);
+    });
+    return Array.from(groupMap.values());
+};
 ---
 
 <!-- Portfolio Section -->
@@ -12,80 +26,101 @@ const { categories } = portfolioData!.data;
     <p class="portfolio-subtitle">Explore our diverse portfolio across different creative disciplines</p>
     
     <!-- Portfolio Tabs -->
-    <div class="portfolio-tabs">
-        {categories.map((category, index) => (
-            <button 
-                class={`tab-btn ${index === 0 ? 'active' : ''}`} 
-                data-tab={category.id}
-            >
-                {category.label}
-            </button>
-        ))}
-    </div>
+    <Tabs tabs={categories.map((category) => ({ id: category.id, label: category.label }))} group="main" />
 
     {categories.map((category, index) => (
         <div 
             class={`tab-content ${index === 0 ? 'active' : ''}`} 
+            data-tabs-group="main"
             id={`${category.id}-tab`}
         >
-            <div class="portfolio-grid">
-                {category.items.length > 0 ? (
-                    category.items.map((item) => (
-                        <PortfolioItem item={item} />
-                    ))
-                ) : (
-                    <p class="no-items">Coming soon...</p>
-                )}
-            </div>
+            {category.id === 'photo' ? (
+                (() => {
+                    const groups = photoGroups(category.items);
+                    const nestedGroups = groups.map((group) => ({
+                        ...group,
+                        id: `photo-${category.id}-${group.id}`
+                    }));
+                    return (
+                        <>
+                            <Tabs tabs={nestedGroups} group={`photo-${category.id}`} className="nested-tabs" />
+                            {nestedGroups.map((group, subIndex) => (
+                                <div
+                                    class={`tab-content ${subIndex === 0 ? 'active' : ''}`}
+                                    data-tabs-group={`photo-${category.id}`}
+                                    id={`${group.id}-tab`}
+                                >
+                                    <div class="portfolio-grid">
+                                        {group.items.map((item) => (
+                                            <PortfolioItem item={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </>
+                    );
+                })()
+            ) : (
+                <div class="portfolio-grid">
+                    {category.items.length > 0 ? (
+                        category.items.map((item) => (
+                            <PortfolioItem item={item} />
+                        ))
+                    ) : (
+                        <p class="no-items">Coming soon...</p>
+                    )}
+                </div>
+            )}
         </div>
     ))}
 </section>
 
 <script>
-    // Portfolio tab functionality
-    function initPortfolioTabs() {
-        const tabButtons = document.querySelectorAll('.tab-btn');
-        const tabContents = document.querySelectorAll('.tab-content');
+    function initTabs() {
+        const tabWrappers = document.querySelectorAll('.portfolio-tabs[data-tabs-group]');
 
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const tabId = (button as HTMLElement).dataset.tab;
-                
-                // Remove active class from all buttons and contents
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Add active class to clicked button
-                button.classList.add('active');
-                
-                // Show corresponding tab content
-                const targetTab = document.getElementById(`${tabId}-tab`);
-                if (targetTab) {
-                    targetTab.classList.add('active');
-                }
-                
-                // Reinitialize interactions for newly visible content
-                setTimeout(() => {
-                    initVideoHovers();
-                }, 100);
+        tabWrappers.forEach((wrapper) => {
+            const group = wrapper.dataset.tabsGroup;
+            if (!group) return;
+
+            const buttons = wrapper.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll(`.tab-content[data-tabs-group="${group}"]`);
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const tabId = (button as HTMLElement).dataset.tab;
+                    if (!tabId) return;
+
+                    buttons.forEach((btn) => btn.classList.remove('active'));
+                    contents.forEach((content) => content.classList.remove('active'));
+
+                    button.classList.add('active');
+                    const targetTab = document.getElementById(`${tabId}-tab`);
+                    if (targetTab) {
+                        targetTab.classList.add('active');
+                    }
+
+                    setTimeout(() => {
+                        initVideoHovers();
+                    }, 100);
+                });
             });
         });
     }
 
-    // Video hover effects
     function initVideoHovers() {
         const videoItems = document.querySelectorAll('.portfolio-item video');
-        
-        videoItems.forEach(video => {
+
+        videoItems.forEach((video) => {
             const item = video.closest('.portfolio-item');
-            
+
             item?.addEventListener('mouseenter', () => {
                 const videoEl = item.querySelector('video');
                 if (videoEl) {
                     videoEl.play();
                 }
             });
-            
+
             item?.addEventListener('mouseleave', () => {
                 const videoEl = item.querySelector('video');
                 if (videoEl) {
@@ -96,14 +131,12 @@ const { categories } = portfolioData!.data;
         });
     }
 
-    // Enhanced media modal functionality for portfolio items
     function initPortfolioMediaModal() {
         const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
-        portfolioItems.forEach(item => {
+
+        portfolioItems.forEach((item) => {
             item.addEventListener('click', () => {
-                // Dispatch custom event to open modal
-                const event = new CustomEvent('openMediaModal', { 
+                const event = new CustomEvent('openMediaModal', {
                     detail: { item: item as HTMLElement }
                 });
                 window.dispatchEvent(event);
@@ -112,7 +145,7 @@ const { categories } = portfolioData!.data;
     }
 
     document.addEventListener('astro:page-load', () => {
-        initPortfolioTabs();
+        initTabs();
         initVideoHovers();
         initPortfolioMediaModal();
     });
