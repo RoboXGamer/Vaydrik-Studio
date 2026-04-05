@@ -1,0 +1,121 @@
+---
+import { getCollection } from 'astro:content';
+import { Image } from 'astro:assets';
+
+const servicesData = await getCollection('services');
+const services = servicesData.map(entry => entry.data);
+---
+<!-- Services Section -->
+<section class="services animated-bg" id="services">
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    <div class="floating-element"></div>
+    
+    <div class="services-header">
+        <h2 class="section-title">OUR EXPERTISE</h2>
+        <p class="services-subtitle">We transform ideas into compelling visual experiences across multiple creative disciplines</p>
+    </div>
+
+    {services.map((service) => (
+        <div class="service-section">
+            <div class={`service-container ${service.reverse ? "reverse" : ""}`}>
+                <div class="service-content">
+                    <div class="service-number" transition:name={`service-number-${service.slug}`}>{service.number}</div>
+                    <h3 class="service-title" transition:name={`service-title-${service.slug}`}>{service.title}</h3>
+                    <p class="service-description">
+                        {service.description}
+                    </p>
+                    <ul class="service-features">
+                        {service.features.map((feature) => (
+                            <li>{feature}</li>
+                        ))}
+                    </ul>
+                    <a href={`/services/${service.slug}`} class="service-cta service-cta-secondary">View Case Study</a>
+                </div>
+                <div class="service-visual" transition:name={`service-visual-${service.slug}`}>
+                    <div class="service-image-grid">
+                        {service.visual.map((viz) => (
+                            <div class="service-image">
+                                {viz.image ? (
+                                    typeof viz.image === 'string' ? (
+                                        <img src={viz.image} alt={viz.alt} />
+                                    ) : (
+                                        <Image src={viz.image} alt={viz.alt} layout="constrained" />
+                                    )
+                                ) : (
+                                    viz.video && (
+                                        <video src={viz.video} muted loop playsinline autoplay></video>
+                                    )
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
+    ))}
+</section>
+
+<script>
+    // Enhanced scroll animations for service sections
+    function initServiceAnimations() {
+        const serviceContainers = document.querySelectorAll('.service-container');
+        
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    (entry.target as HTMLElement).style.transform = 'translateY(0)';
+                    (entry.target as HTMLElement).style.opacity = '1';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        serviceContainers.forEach(container => {
+            (container as HTMLElement).style.transform = 'translateY(50px)';
+            (container as HTMLElement).style.opacity = '0';
+            (container as HTMLElement).style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            serviceObserver.observe(container);
+        });
+    }
+
+    // Service CTA hover effects
+    function initServiceCTAs() {
+        const ctas = document.querySelectorAll('.service-cta');
+        
+        ctas.forEach(cta => {
+            cta.addEventListener('mouseenter', function(this: HTMLElement) {
+                this.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+            
+            cta.addEventListener('mouseleave', function(this: HTMLElement) {
+                this.style.transform = 'translateY(-3px) scale(1)';
+            });
+        });
+    }
+
+    // Floating elements animation
+    function initFloatingElements() {
+        const floatingElements = document.querySelectorAll('.floating-element');
+        
+        floatingElements.forEach((element, index) => {
+            const randomDelay = Math.random() * 2;
+            const randomDuration = 4 + Math.random() * 4;
+            
+            (element as HTMLElement).style.animationDelay = randomDelay + 's';
+            (element as HTMLElement).style.animationDuration = randomDuration + 's';
+            
+            // Random movement on scroll
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const rate = scrolled * -0.1 * (index + 1);
+                (element as HTMLElement).style.transform = `translateY(${rate}px) rotate(${rate * 0.5}deg)`;
+            });
+        });
+    }
+
+    document.addEventListener('astro:page-load', () => {
+        initServiceAnimations();
+        initServiceCTAs();
+        initFloatingElements();
+    });
+</script>

@@ -1,0 +1,152 @@
+---
+import { getEntry } from 'astro:content';
+import PortfolioItem from './PortfolioItem.astro';
+import Tabs from './Tabs.astro';
+
+const portfolioData = await getEntry('portfolio', 'portfolio-data');
+const { categories } = portfolioData!.data;
+
+const photoGroups = (items) => {
+    const groupMap = new Map();
+    items.forEach((item) => {
+        const label = item.category || 'All';
+        const id = label.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+        if (!groupMap.has(label)) {
+            groupMap.set(label, { id, label, items: [] });
+        }
+        groupMap.get(label).items.push(item);
+    });
+    return Array.from(groupMap.values());
+};
+---
+
+<!-- Portfolio Section -->
+<section class="portfolio-section" id="work">
+    <h2 class="section-title">OUR WORK</h2>
+    <p class="portfolio-subtitle">Explore our diverse portfolio across different creative disciplines</p>
+    
+    <!-- Portfolio Tabs -->
+    <Tabs tabs={categories.map((category) => ({ id: category.id, label: category.label }))} group="main" />
+
+    {categories.map((category, index) => (
+        <div 
+            class={`tab-content ${index === 0 ? 'active' : ''}`} 
+            data-tabs-group="main"
+            id={`${category.id}-tab`}
+        >
+            {category.id === 'photo' ? (
+                (() => {
+                    const groups = photoGroups(category.items);
+                    const nestedGroups = groups.map((group) => ({
+                        ...group,
+                        id: `photo-${category.id}-${group.id}`
+                    }));
+                    return (
+                        <>
+                            <Tabs tabs={nestedGroups} group={`photo-${category.id}`} className="nested-tabs" />
+                            {nestedGroups.map((group, subIndex) => (
+                                <div
+                                    class={`tab-content ${subIndex === 0 ? 'active' : ''}`}
+                                    data-tabs-group={`photo-${category.id}`}
+                                    id={`${group.id}-tab`}
+                                >
+                                    <div class="portfolio-grid">
+                                        {group.items.map((item) => (
+                                            <PortfolioItem item={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+                        </>
+                    );
+                })()
+            ) : (
+                <div class="portfolio-grid">
+                    {category.items.length > 0 ? (
+                        category.items.map((item) => (
+                            <PortfolioItem item={item} />
+                        ))
+                    ) : (
+                        <p class="no-items">Coming soon...</p>
+                    )}
+                </div>
+            )}
+        </div>
+    ))}
+</section>
+
+<script>
+    function initTabs() {
+        const tabWrappers = document.querySelectorAll('.portfolio-tabs[data-tabs-group]');
+
+        tabWrappers.forEach((wrapper) => {
+            const group = wrapper.dataset.tabsGroup;
+            if (!group) return;
+
+            const buttons = wrapper.querySelectorAll('.tab-btn');
+            const contents = document.querySelectorAll(`.tab-content[data-tabs-group="${group}"]`);
+
+            buttons.forEach((button) => {
+                button.addEventListener('click', () => {
+                    const tabId = (button as HTMLElement).dataset.tab;
+                    if (!tabId) return;
+
+                    buttons.forEach((btn) => btn.classList.remove('active'));
+                    contents.forEach((content) => content.classList.remove('active'));
+
+                    button.classList.add('active');
+                    const targetTab = document.getElementById(`${tabId}-tab`);
+                    if (targetTab) {
+                        targetTab.classList.add('active');
+                    }
+
+                    setTimeout(() => {
+                        initVideoHovers();
+                    }, 100);
+                });
+            });
+        });
+    }
+
+    function initVideoHovers() {
+        const videoItems = document.querySelectorAll('.portfolio-item video');
+
+        videoItems.forEach((video) => {
+            const item = video.closest('.portfolio-item');
+
+            item?.addEventListener('mouseenter', () => {
+                const videoEl = item.querySelector('video');
+                if (videoEl) {
+                    videoEl.play();
+                }
+            });
+
+            item?.addEventListener('mouseleave', () => {
+                const videoEl = item.querySelector('video');
+                if (videoEl) {
+                    videoEl.pause();
+                    videoEl.currentTime = 0;
+                }
+            });
+        });
+    }
+
+    function initPortfolioMediaModal() {
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        portfolioItems.forEach((item) => {
+            item.addEventListener('click', () => {
+                const event = new CustomEvent('openMediaModal', {
+                    detail: { item: item as HTMLElement }
+                });
+                window.dispatchEvent(event);
+            });
+        });
+    }
+
+    document.addEventListener('astro:page-load', () => {
+        initTabs();
+        initVideoHovers();
+        initPortfolioMediaModal();
+    });
+</script>

@@ -1,0 +1,22 @@
+---
+interface Tab {
+  id: string;
+  label: string;
+}
+
+interface Props {
+  tabs: Tab[];
+  group: string;
+  className?: string;
+}
+
+const { tabs, group, className = '' } = Astro.props;
+---
+
+<div class={`portfolio-tabs ${className}`} data-tabs-group={group}>
+    {tabs.map((tab, index) => (
+        <button class={`tab-btn ${index === 0 ? 'active' : ''}`} data-tab={tab.id} type="button">
+            {tab.label}
+        </button>
+    ))}
+</div>

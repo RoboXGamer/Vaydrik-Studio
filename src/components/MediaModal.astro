@@ -1,0 +1,106 @@
+<!-- Media Modal for Full View -->
+<div class="media-modal" id="media-modal">
+    <div class="media-modal-content">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div id="modal-media"></div>
+    </div>
+</div>
+
+<script>
+    function openModal(item: HTMLElement) {
+        const modal = document.getElementById('media-modal');
+        const modalMedia = document.getElementById('modal-media');
+
+        // Get media content
+        const video = item.querySelector('video');
+        const image = item.querySelector('img');
+
+        // Clear previous content
+        if (modalMedia) modalMedia.innerHTML = '';
+
+        // Add media to modal
+        if (video && video.querySelector('source')) {
+            const modalVideo = video.cloneNode(true) as HTMLVideoElement;
+            modalVideo.removeAttribute('style');
+            modalVideo.removeAttribute('width');
+            modalVideo.removeAttribute('height');
+            modalVideo.controls = true;
+            modalVideo.muted = false;
+            modalVideo.autoplay = true;
+            modalVideo.style.width = 'auto';
+            modalVideo.style.height = 'auto';
+            modalVideo.style.maxWidth = '100%';
+            modalVideo.style.maxHeight = '90vh';
+            modalVideo.style.objectFit = 'contain';
+            modalVideo.style.borderRadius = '12px';
+            modalVideo.style.display = 'block';
+            modalMedia?.appendChild(modalVideo);
+            // attempt to play after appending
+            setTimeout(() => {
+                modalVideo.play().catch(() => {
+                    // play might fail due to browser policy; ignore
+                });
+            }, 0);
+        } else if (image) {
+            const modalImage = image.cloneNode(true) as HTMLImageElement;
+            
+            // Clear all inline styles and attributes that cause distortion
+            modalImage.removeAttribute('style');
+            modalImage.removeAttribute('width');
+            modalImage.removeAttribute('height');
+            
+            // Apply modal-specific styles
+            modalImage.style.width = 'auto';
+            modalImage.style.height = 'auto';
+            modalImage.style.maxWidth = '100%';
+            modalImage.style.maxHeight = '90vh';
+            modalImage.style.objectFit = 'contain';
+            modalImage.style.borderRadius = '12px';
+            modalImage.style.display = 'block';
+            
+            modalMedia?.appendChild(modalImage);
+        }
+
+        // Show modal
+        modal?.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('media-modal');
+        const modalVideo = modal?.querySelector('video');
+        
+        if (modalVideo) {
+            modalVideo.pause();
+        }
+        
+        modal?.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Listen for custom event from Portfolio component
+    window.addEventListener('openMediaModal', (e: Event) => {
+        const customEvent = e as CustomEvent;
+        openModal(customEvent.detail.item);
+    });
+
+    // Close modal with escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    // Close modal when clicking outside content or on close button
+    document.addEventListener('astro:page-load', () => {
+        document.getElementById('media-modal')?.addEventListener('click', (e) => {
+            if ((e.target as HTMLElement).id === 'media-modal') {
+                closeModal();
+            }
+        });
+
+        document.getElementById('modal-close')?.addEventListener('click', () => {
+            closeModal();
+        });
+    });
+</script>

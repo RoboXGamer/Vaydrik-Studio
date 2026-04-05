@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+  item: {
+    type: string;
+    image?: any;
+    video?: string;
+    category: string;
+    title: string;
+    description: string;
+    tech: string[];
+    isImagePreview?: boolean;
+  };
+}
+
+const { item } = Astro.props;
+const isVideo = item.type === 'video' || item.type === 'motion';
+const renderVideo = isVideo && item.video && !item.isImagePreview;
+---
+
+<div class={`portfolio-item ${item.type}-item`}>
+    {renderVideo ? (
+        <video loop muted playsinline>
+            <source src={item.video} type="video/mp4" />
+        </video>
+    ) : (
+        item.image && (
+            typeof item.image === 'string' ? (
+                <img src={item.image} alt={item.title} />
+            ) : (
+                <Image src={item.image} alt={item.title} layout="constrained" />
+            )
+        )
+    )}
+    
+    {isVideo && <div class="play-button"></div>}
+    
+    <div class={`media-type ${item.type}`}>
+        {item.type.charAt(0).toUpperCase() + item.type.slice(1)}
+    </div>
+    
+    <div class="portfolio-overlay">
+        <span class="portfolio-category">{item.category}</span>
+        <h3 class="portfolio-title">{item.title}</h3>
+        <p class="portfolio-description">{item.description}</p>
+        <div class="portfolio-tech">
+            {item.tech.map((tag) => (
+                <span class="tech-tag">{tag}</span>
+            ))}
+        </div>
+    </div>
+</div>
